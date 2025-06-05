@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NetPulse - Real-Time WiFi Speed Monitoring</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader" class="preloader">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">NetPulse</div>
+    
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#dashboard">Dashboard</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <button id="menu-toggle" class="menu-toggle" aria-label="Toggle Menu" title="Menu">
+      <span class="hamburger"></span>
+    </button>
+
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark/Light Mode" title="Toggle Dark Mode">
+      <i class="fas fa-moon"></i>
+    </button>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <h1>Blazing Fast WiFi Speed Monitoring</h1>
+    <p>Track your internet performance with precision, beauty, and real-time feedback.</p>
+    <button id="startTest" class="cta-btn">Start Speed Test</button>
+  </section>
+
+  <!-- Dashboard Section -->
+  <section class="dashboard" id="dashboard">
+    <div class="card" data-tooltip="Current download speed in Mbps">
+      <div class="icon-ring"><i class="fas fa-download"></i></div>
+      <h3>Download</h3>
+      <p id="downloadSpeed">-- Mbps</p>
+    </div>
+    <div class="card" data-tooltip="Current upload speed in Mbps">
+      <div class="icon-ring"><i class="fas fa-upload"></i></div>
+      <h3>Upload</h3>
+      <p id="uploadSpeed">-- Mbps</p>
+    </div>
+    <div class="card" data-tooltip="Current latency/ping in milliseconds">
+      <div class="icon-ring"><i class="fas fa-clock"></i></div>
+      <h3>Latency</h3>
+      <p id="latency">-- ms</p>
+    </div>
+    <div class="test-time">
+      <p>Last Tested: <span id="testTime">--</span></p>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <h2>Why NetPulse?</h2>
+    <div class="feature-grid">
+      <div class="feature-box">
+        <i class="fas fa-wifi"></i>
+        <h4>Real-Time Stats</h4>
+        <p>Instant upload, download, and latency results with smooth animation.</p>
+      </div>
+      <div class="feature-box">
+        <i class="fas fa-shield-alt"></i>
+        <h4>Privacy First</h4>
+        <p>No data stored. 100% secure and private. Runs in-browser only.</p>
+      </div>
+      <div class="feature-box">
+        <i class="fas fa-chart-line"></i>
+        <h4>Smart Analytics</h4>
+        <p>Track trends, detect slowdowns, and optimize your network usage.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials" id="testimonials">
+    <h2>User Feedback</h2>
+    <div class="testimonial-grid">
+      <div class="testimonial">
+        <p>“Sleek and accurate! Helped me fix my lag issues in minutes.”</p>
+        <h5>- Sarah A., Remote Developer</h5>
+      </div>
+      <div class="testimonial">
+        <p>“Love the clean UI and instant results. Best speed tester I've used.”</p>
+        <h5>- Zane T., Gamer</h5>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Questions? Suggestions? Email us at <a href="mailto:support@netpulse.com">support@netpulse.com</a></p>
+    <div class="social-icons">
+      <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="#" aria-label="Discord"><i class="fab fa-discord"></i></a>
+      <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 NetPulse Inc. — WiFi Intelligence. Faster. Smarter.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
